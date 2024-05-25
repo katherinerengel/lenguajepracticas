@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="ejemplo1.xsl" type="text/xsl"?> <!-- Para enlazarlo a documento xsl--> 
+
+<!-- Documento DTD valido-->
+<!DOCTYPE pedidos [ <!-- Declaración para crear el DTD-->
+    <!ELEMENT pedidos (usuario+)> <!--cadinalidad + significa mínimo un usuario-->
+    <!ELEMENT usuario (nombre, apellido, pais, edad)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellido (#PCDATA)>
+    <!ELEMENT pais (#PCDATA)>
+    <!ELEMENT edad (#PCDATA)>
+
+]>
+   <!-- Documento XML valido-->
+    <pedidos> <!-- Elemento Raíz-->
+        <usuario>
+            <nombre>Katherine</nombre>
+            <apellido>Rengel</apellido>
+            <pais>España</pais>
+            <edad>13</edad>
+        </usuario>
+        <usuario>
+            <nombre>Carolina</nombre>
+            <apellido>Dos Santos</apellido>
+            <pais>Portugal</pais>
+            <edad>20</edad>
+        </usuario>
+        <usuario>
+            <nombre>Ana</nombre>
+            <apellido>Salas</apellido>
+            <pais>EEUU</pais>
+            <edad>18</edad>
+        </usuario>
+    </pedidos>

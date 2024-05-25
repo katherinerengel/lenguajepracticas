@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ventas [
+    <!ELEMENT ventas (venta+)>
+    <!ELEMENT venta (titulo, autor, genero, precio, fecha)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT genero (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+]>
+    <ventas>
+        <venta>
+            <titulo>Cien años de soledad</titulo>
+            <autor>Gabriel García Márquez</autor>
+            <genero>Realismo mágico</genero>
+            <precio>9.99</precio>
+            <fecha>2024-04-20</fecha>
+        </venta>
+    </ventas>

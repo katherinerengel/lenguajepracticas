@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="ejercicio1.xsl" type="text/xsl"?>
+
+<!-- Documento DTD valido-->
+<!DOCTYPE transacciones [
+    <!ELEMENT transacciones (registro+)>
+    <!ELEMENT registro (titulo_de_la_cancion, artista_banda, genero_de_la_cancion, precio_unitario, fecha_de_la_transaccion)>
+    <!ELEMENT titulo_de_la_cancion (#PCDATA)>
+    <!ELEMENT artista_banda (#PCDATA)>
+    <!ELEMENT genero_de_la_cancion (#PCDATA)>
+    <!ELEMENT precio_unitario (#PCDATA)>
+    <!ELEMENT fecha_de_la_transaccion (#PCDATA)>
+]>
+   <!-- Documento XML valido-->
+    <transacciones> 
+        <registro>
+            <titulo_de_la_cancion>Bohemian Rhapsody</titulo_de_la_cancion>
+            <artista_banda>Queen</artista_banda>
+            <genero_de_la_cancion>Rock</genero_de_la_cancion>
+            <precio_unitario>0.99</precio_unitario>
+            <fecha_de_la_transaccion>2024-04-15</fecha_de_la_transaccion>
+        </registro>
+    </transacciones>
